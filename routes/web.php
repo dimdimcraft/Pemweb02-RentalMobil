@@ -23,3 +23,6 @@ Route::get('/mobil',[MobilController::class,'index']);
 Route::get('/mobil/create',[MobilController::class,'create']); //memangil form
 Route::post('/mobil/simpanData',[MobilController::class,'store']); //mengimpan data
 Route::get('/merk',[MerkController::class, 'index']);
+
+Route::get('/merk/create',[MerkController::class,'create']);
+Route::post('/merk/simpanData',[MerkController::class, 'store']);
