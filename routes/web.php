@@ -26,3 +26,7 @@ Route::get('/merk',[MerkController::class, 'index']);
 
 Route::get('/merk/create',[MerkController::class,'create']);
 Route::post('/merk/simpanData',[MerkController::class, 'store']);
+
+Route::get('/merk/edit/{id}',[MerkController::class, 'edit']);
+Route::post('/merk/update/{id}', [MerkController::class, 'update']);
+Route::get('/merk/delete/{id}',[MerkController::class, 'delete']);
