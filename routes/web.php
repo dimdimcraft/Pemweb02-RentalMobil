@@ -19,9 +19,11 @@ Route::get('/', function () {
 });
 
 Route::get('/mobil',[MobilController::class,'index']);
-
 Route::get('/mobil/create',[MobilController::class,'create']); //memangil form
 Route::post('/mobil/simpanData',[MobilController::class,'store']); //mengimpan data
+Route::get('/mobil/edit/{id}',[MobilController::class, 'edit']);
+Route::post('/mobil/update/{id}', [MobilController::class, 'update']);
+Route::get('/mobil/delete/{id}',[MobilController::class, 'delete']);
 
 Route::get('/merk',[MerkController::class, 'index']);
 Route::get('/merk/create',[MerkController::class,'create']);
